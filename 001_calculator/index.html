@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <!-- defer is the most recommend option (load html and scripts at the same time 
+        but wait with execute scripts until html will be parsed) -->
+    <!-- async is the option to use when order is not need and we want to script execute as soon as it will be ready -->
+    <script src="./assets/scripts/vendor.js" defer></script>
+    <script src="./assets/scripts/app.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>The Unconventional Calculator</h1>
+    </header>
+
+    <section id="calculator">
+        <input type="number" id="input-number" />
+        <div id="calc-actions">
+            <button type="button" id="btn-add">+</button>
+            <button type="button" id="btn-subtract">-</button>
+            <button type="button" id="btn-multiply">*</button>
+            <button type="button" id="btn-divide">/</button>
+        </div>
+    </section>
+
+    <section id="results">
+        <h2 id="current-calculation">0</h2>
+        <h2>Result: <span id="current-result">0</span></h2>
+    </section>
+
+</body>
+
+</html>

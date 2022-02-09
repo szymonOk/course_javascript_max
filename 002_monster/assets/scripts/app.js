@@ -143,7 +143,14 @@ function healHandler() {
 }
 
 function logHandler() {
-	console.log(battleLog);
+	let i = 0;
+	for (const logEntry of battleLog) {
+		console.log(`%c#${i}`, 'color:orange; font-size:16px;');
+		for (const key in logEntry) {
+			console.log(`${key} ==> ${logEntry[key]}`);
+		}
+		i++;
+	}
 }
 
 attackBtn.addEventListener('click', attackHandler);
